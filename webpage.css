@@ -1,0 +1,182 @@
+
+
+body{ background-color:#FFFFFF; 
+padding-top:1%;
+padding-bottom:0%;
+padding-left:40px;
+padding-right:40px;
+}
+
+
+h1{
+color:#FFFFFF; 
+font-family:Garamond, cursive, sans-serif;
+text-align:center;
+font-size: 40px;
+}
+
+h2{
+color:#FFFFFF;
+font-size: 22px; 
+font-family:Garamond, cursive;
+background-color:#0c1251;
+padding-left:1em;
+font-weight:lighter;
+text-align:left;
+}
+
+h3{
+color:#191970;
+padding-top:0px;
+font-size: 22px; 
+font-family:Garamond, cursive;
+font-weight:lighter;
+}
+
+
+div.h{
+with:$(window).width();
+background-color:#0c1251;
+}
+
+
+p{
+color:black;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+ul{
+font-family: Arial, Helvetica, sans-serif;
+padding-bottom:5px;
+}
+
+ol{
+font-family:Arial, Helvetica, sans-serif;
+}
+
+li{padding-top:8px;}
+
+a:link{
+color: #191970 ;
+background-color:transparent;
+text-decoration:none;
+}
+
+a{
+color: #191970 ;
+background-color:transparent;
+text-decoration:none;
+}
+
+
+label{
+font-family:Arial, Helvetica, sans-serif;
+}
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color:#0c1251;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 60px;
+  transition: 0.3s;
+  font-size: 22px;
+  color:#FFFFFF; 
+  font-family:Garamond, cursive;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  border-top: none;
+}
+
+
+
+
+/* PROGRAM */
+
+
+/* .wrapper { */
+	/* display: grid; */
+	/* grid-template-columns: 2fr 3fr; */
+	/* grid-template-rows: 1fr 1fr; */
+/* } */
+
+
+.createTransformation  {
+	padding-top: 0px;
+	margin-left : 5%;
+	position:relative;
+    left:5%; right:51%; top:0; bottom: 30%;
+	overflow : auto;
+}
+
+.computeCompositions {
+	padding-top: 0px;
+	margin-left : 5%;
+	position:relative;
+    left:5%; right:51%; top:70%; bottom: 0;
+    overflow : auto;
+}
+
+.transformationDetails {
+	padding-top: 0px;
+	margin-left : 2%;
+	position:relative;
+    left:50%; right:0; top:0; bottom: 40%;
+    overflow : auto;
+	
+}
+
+.decompDetails_div {
+	padding-top: 20px;
+	margin-left : 2%;
+	position:relative;
+    left:50%; right:0; top:60%; bottom: 0;
+    overflow : auto;
+}
+
+
+
+
+.Err {
+	color : red;
+}
+
+
+.tableBasePoints {
+	border : 2px solid black;
+	max-width:200px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.tableBasePointsDiv {
+	text-align: center;
+	max-width : 500px;
+	padding: 0 5px;
+	overflow-x: auto;
+}
+
+.tableBasePointsDiv td{
+	padding: 0 5px;
+}
+
+
+
