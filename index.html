@@ -5,183 +5,203 @@
 <head> 
 <meta http-equiv="Content-type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" type="text/css" href="webpage.css">
 
 <title> Susanna Zimmermann </title> 
 </head>
 
-<body>
-
-<div style = "background-color: #0c1251; width:$(window).width(); padding:10px;">
-<h1 > 
-Susanna Zimmermann 
-</h1>
-</div>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
 
-
-
-<div class="tab" style="margin-top:20px;">
-  <button class="tablinks" onclick="openCity(event, 'About me')" id="defaultOpen">About me</button>
-  <button class="tablinks" onclick="openCity(event, 'Publications')">Publications</button>
-  <button class="tablinks" onclick="openCity(event, 'Activities')">Activities</button>
-  <button class="tablinks" onclick="openCity(event, 'Talks')">Talks</button>
-   <!-- <button class="tablinks" onclick="openCity(event, 'Sarkisov')">Visualise links</button>-->
-            <button class="tablinks" onclick="openCity(event, 'Decompose')">Hands on maths</button>
-</div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Susanna <br>Zimmermann</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button">About me</a>
+  <a href="#Publications" onclick="w3_close()" class="w3-bar-item w3-button">Publications</a> 
+  <a href="#Activities" onclick="w3_close()" class="w3-bar-item w3-button">Activities</a> 
+  <a href="#Talks" onclick="w3_close()" class="w3-bar-item w3-button">Talks</a> 
+    <a href="#ERC" onclick="w3_close()" class="w3-bar-item w3-button">ERC Saphidir</a>
+  <a href="#Hands on maths" onclick="w3_close()" class="w3-bar-item w3-button">Hands on maths</a>
+</nav>
 
 
 
-<div id="About me" class="tabcontent">
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Susanna Zimmermann</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
 
-<center>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+
+
+<!-- Push down content on small screens --> 
+<div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+
+<!-- About section -->
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="About">
+    <h2><b>About Me</b></h2>
+    <img src="Cnrs-SW.jpeg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+	
+	<center>
 
 <table style="margin-top:50px;">
+		<td margin-left="20px;">
+		<table>
+		<tr><p style = "padding-top:10px; font-weight:bold"> 
+		Full Professor, Institut de mathématiques d'Orsay, University of Paris-Saclay</p>
+		</tr>
 
-<tr><td width="360px">
-<!--<img src = "IMG_5226.jpg" style = "width:175px;height:228px; margin-bottom:60px;">-->
-<img src = "Cnrs-SW.jpeg" style = "height:175px;width:330px; margin-bottom:60px;">
-</td>
+		<tr>
+		<p style = "text-align:left";  >
+		<b>Contact</b>: susanna.zimmermannATSuniversite-paris-saclay.frS (take away the obvious letters)
+		</p>
+		</tr>
 
-<td margin-left="20px;">
-<table>
-<tr><p style = "padding-top:10px; font-weight:bold"> 
-Full Professor, Institut de mathématiques d'Orsay, University of Paris-Saclay</p>
-</tr>
-
-<tr>
-<p style = "text-align:left";  >
-<!--Laboratoire angevin de recherche en math&eacute;matiques  <br>
-Facult&eacute; des Sciences <br>
-2 Boulevard Lavoisier <br>
-49045 Angers cedex 01<br>-->
-susanna.zimmermannATSuniversite-paris-saclay.frS (take away the obvious letters)
-</p>
-</tr>
-
-<tr>
-<p> <b>Research interests</b>: birational geometry, Cremona groups, algebraic groups, real algebraic geometry<br>
-<a itemprop="sameAs" content="https://orcid.org/0000-0002-2216-7712" href="https://orcid.org/0000-0002-2216-7712" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-2216-7712</a><br>
-<b>CV</b>: <a href="CV_academic.pdf">english</a>,  <a href = "CV_francais.pdf"> fran&ccedil;ais</a>
-</p>
-</tr>
+		<tr>
+		<p> <b>Research interests</b>: birational geometry, Cremona groups, algebraic groups, real algebraic 	geometry<br>
+		<a itemprop="sameAs" content="https://orcid.org/0000-0002-2216-7712" href="https://orcid.org/0000-0002-2216-7712" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-2216-7712</a><br>
+		</p>
+			
+		<p>
+		<b>CV</b>: <a href="CV_academic.pdf">english</a>,  <a href = "CV_francais.pdf"> fran&ccedil;ais</a>
+		</p>
+		</tr>
 
 
-<td>
-<tr>
-<p>
-<ul>
-<li>Honorary junior member of <a href="https://www.iufrance.fr">IUF</a> </li>
-<li> PI of ERC StG Saphidir</li>
-<li>Recipient of the <a href = "http://www.cnrs.fr/fr/personne/medailles-de-bronze-2020">médaille de bronze du CNRS 2020</a>, <a href="https://www.bretagne-pays-de-la-loire.cnrs.fr/fr/cnrsinfo/susanna-zimmermann-comment-la-geometrie-algebrique-decrit-les-deformations">portrait</a>, <a href="https://www.insmi.cnrs.fr/fr/cnrsinfo/propos-des-travaux-de-susanna-zimmermann-medaille-de-bronze-du-cnrs-2020">a propos</a> and some <a href="https://www.insmi.cnrs.fr/fr/cnrsinfo/groupes-de-cremona-en-dimension-superieure">related math</a></li>
-<li>Member of <a href="https://fibalga.math.cnrs.fr">ANR "FIBALGA"</a></li>
-<li><a href="https://agrafr.fr">AGRAFr</a> produced these <a href="https://www.youtube.com/user/AGRAFr">interviews</a> with four women in research in France and Portugal (among them me) for the International Women's Day on 8 March 2022 </li>
-</ul>
-</p>
-</tr>
+		<td>
+		<tr>
+		<p>
+		<ul>
+		<li>Honorary junior member of <a href="https://www.iufrance.fr">IUF</a> </li>
+		<li> PI of ERC StG Saphidir</li>
+		<li>Member of <a href="https://fibalga.math.cnrs.fr">ANR "FIBALGA"</a></li>
+		<li>Recipient of the <a href = "http://www.cnrs.fr/fr/personne/medailles-de-bronze-2020">médaille de bronze du CNRS 2020</a>, <a href="https://www.bretagne-pays-de-la-loire.cnrs.fr/fr/cnrsinfo/susanna-zimmermann-comment-la-geometrie-algebrique-decrit-les-deformations">portrait</a>, <a href="https://www.insmi.cnrs.fr/fr/cnrsinfo/propos-des-travaux-de-susanna-zimmermann-medaille-de-bronze-du-cnrs-2020">a propos</a> and some <a href="https://www.insmi.cnrs.fr/fr/cnrsinfo/groupes-de-cremona-en-dimension-superieure">related math</a></li>
+		<li><a href="https://agrafr.fr">AGRAFr</a> produced these <a href="https://www.youtube.com/user/AGRAFr">interviews</a> with four women in research in France and Portugal (among them me) for the International Women's Day on 8 March 2022 </li>
+		</ul>
+		</p>
+		</tr>
 
-<tr>
-<p>
-<a href = "https://sites.google.com/view/pascalfong/fr">Pascal Fong</a> is a postdoc with me. <br>
-</p>
-</tr>
+		<tr>
+		<p>
+		<a href = "https://sites.google.com/view/pascalfong/fr">Pascal Fong</a> is a postdoc with me. <br>
+		</p>
+		</tr>
 
-<tr>
-<img src="Logo_IUF.png" style="width:150px;height:100px;">
-<img src="LOGO_ERC-FLAG_EU NEGATIF.png" style="width:150px;height:100px;">
+		<tr>
+		<img src="Logo_IUF.png" style="width:150px;height:100px;">
+		<img src="LOGO_ERC-FLAG_EU NEGATIF.png" style="width:150px;height:100px;">
 
-</tr>
+		</tr>
+		</table>
+	</td>
+	</table>
 
-
-</table>
-</td>
-
-<td><br>
-</td>
-</table>
-
+	</div>
 </div>
 
 
 
 
 
-<div id="Publications" class="tabcontent">
-<h3> Preprints </h3>
-<ul>
-<li> Survey on normal subgroups of Cremona groups <a href = "Survey-v1.pdf">[pdf]</a> (06/2023) </li>
-<li> Birational involutions of the real projective plane (with <a href ="https://www.maths.ed.ac.uk/cheltsov/">Ivan Cheltsov</a>, <a href="https://www.i2m.univ-amu.fr/perso/frederic.mangolte/index.html">Fr&eacute;d&eacute;ric Mangolte</a> and <a href="http://yasinskyegor.com">Egor Yasinsky</a>) 
-<a href = "Birational-involutions.pdf">[pdf]</a> (07/2022) </li>
-</ul>
+<!-- Publications section -->
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="Publications">
+    <h2><b>Publications</b></h2>
+    	<div class="w3-content w3-justify" style="max-width:600px">
 
-<h3> Published articles </h3>
-<ol>
-<li> Properties of the Cremona group endowed with the Euclidean topology (with Hannah Bergner) 
-<a href = "small_grps-2022.pdff">[pdf]</a> accepted in Bull. of the Lond. Math. Soc.</li>
-<li> Factorization centers in dimension two and the Grothendieck ring of varieties (with  <a href="http://member.ipmu.jp/hsuehyung.lin/index.html">Hsueh-Yung Lin</a> and <a href="http://e-shinder.staff.shef.ac.uk">Evgeny Shinder</a>), accepted in Algebraic Geometry <a href= "Lin_Shinder_Z-centers_surfaces_cremona.pdf">[pdf]</a> </li>
-<li> Small G-varieties (with <a href = "https://kraftadmin.wixsite.com/hpkraft">Hanspeter Kraft</a> and <a href = "https://andriyregeta.wixsite.com/homepage">Andriy Regeta</a>)  accepted in Canadian J. of Math. <a href = "SmallVarieties_final.pdf">[pdf]</a>
-</li>
-<li> A remark on Geiser involutions, Special New Zealand volume, Europ. J. of Math, 2022  <a href = "QuotientGeiser_v6.pdf">[pdf]</a> <a href="https://link.springer.com/epdf/10.1007/s40879-022-00580-2?sharing_token=CjupACLObq16xuIQsCMjXfe4RwlQNchNByi7wbcMAY7uGCtbfDhEqpzDtHxldDZ-w4v4yjlMlIYIzGzwlg6eu6baFrg5wWGOj8sgyXIMj_aa10yVZLHmKP2OZ2BQkHQnnNJPZfIXQ0OH0glu0ggUO9XTZAsXsj8SiRikVImdKHA=">[officiel link]</a></li>
-<li> Bijective Cremona transformations of the plane (with <a href = "https://www.math.ubc.ca/~sasgarli/">Shamil Asgarli</a>,  <a href = "https://people.umass.edu/kwlai/">Kuan-Wen Lai</a> and <a href = "https://sites.google.com/view/masahiro-nakahara/home">Masahiro Nakahara</a>), to appear in Selecta Math. <a href = "BijectiveCremona.pdf">[pdf]</a> </li>
-<li> Algebraic subgroups of the plane Cremona group over a perfect field (with <a href = "https://www.math.univ-toulouse.fr/~jschneid/">Julia Schneider</a>) <br>
+
+	<h3> Preprints </h3>
+	<table>
+	<td>
+		<ul>
+		<li> Survey on normal subgroups of Cremona groups <a href = "Survey-v1.pdf">[pdf]</a> (06/2023) </li>
+		<li> Birational involutions of the real projective plane (with <a href ="https://www.maths.ed.ac.uk/cheltsov/">Ivan Cheltsov</a>, <a href="https://www.i2m.univ-amu.fr/perso/frederic.mangolte/index.html">Fr&eacute;d&eacute;ric Mangolte</a> and <a href="http://yasinskyegor.com">Egor Yasinsky</a>) 
+		<a href = "Birational-involutions.pdf">[pdf]</a> (07/2022) </li>
+		</ul>
+
+	<h3> Published articles </h3>
+		<ol>
+		<li> Properties of the Cremona group endowed with the Euclidean topology (with Hannah Bergner) 
+		<a href = "small_grps-2022.pdff">[pdf]</a> accepted in Bull. of the Lond. Math. Soc.</li>
+		<li> Factorization centers in dimension two and the Grothendieck ring of varieties (with  <a href="http://member.ipmu.jp/hsuehyung.lin/index.html">Hsueh-Yung Lin</a> and <a href="http://e-shinder.staff.shef.ac.uk">Evgeny Shinder</a>), accepted in Algebraic Geometry <a href= "Lin_Shinder_Z-centers_surfaces_cremona.pdf">[pdf]</a> </li>
+		<li> Small G-varieties (with <a href = "https://kraftadmin.wixsite.com/hpkraft">Hanspeter Kraft</a> and <a href = "https://andriyregeta.wixsite.com/homepage">Andriy Regeta</a>)  accepted in Canadian J. of Math. <a href = "SmallVarieties_final.pdf">[pdf]</a>
+		</li>
+		<li> A remark on Geiser involutions, Special New Zealand volume, Europ. J. of Math, 2022  <a href = "QuotientGeiser_v6.pdf">[pdf]</a> <a href="https://link.springer.com/epdf/10.1007/s40879-022-00580-2?sharing_token=CjupACLObq16xuIQsCMjXfe4RwlQNchNByi7wbcMAY7uGCtbfDhEqpzDtHxldDZ-w4v4yjlMlIYIzGzwlg6eu6baFrg5wWGOj8sgyXIMj_aa10yVZLHmKP2OZ2BQkHQnnNJPZfIXQ0OH0glu0ggUO9XTZAsXsj8SiRikVImdKHA=">[officiel link]</a></li>
+		<li> Bijective Cremona transformations of the plane (with <a href = "https://www.math.ubc.ca/~sasgarli/">Shamil Asgarli</a>,  <a href = "https://people.umass.edu/kwlai/">Kuan-Wen Lai</a> and <a href = "https://sites.google.com/view/masahiro-nakahara/home">Masahiro Nakahara</a>), to appear in Selecta Math. <a href = "BijectiveCremona.pdf">[pdf]</a> </li>
+		<li> Algebraic subgroups of the plane Cremona group over a perfect field (with <a href = "https://www.math.univ-toulouse.fr/~jschneid/">Julia Schneider</a>) <br>
 EpiGA, vol. 5 
 (2021), no. 14 
-<a href ="alg_subgroup_perfect_Cremona_Nov2021.pdf">[pdf]</a> <a href="https://epiga.episciences.org/paper/view/id/8709">(Official webpage)</a>
-<a href ="alg_subgroup_perfect_Cremona_Erratum">[erratum]</a> 
-</li>
-<li> Continuous automorphisms of Cremona groups (with <a href = "https://people.epfl.ch/christian.urech">Christian Urech</a>) <br>
+		<a href ="alg_subgroup_perfect_Cremona_Nov2021.pdf">[pdf]</a> <a href="https://epiga.episciences.org/paper/view/id/8709">(Official webpage)</a>
+		<a href ="alg_subgroup_perfect_Cremona_Erratum">[erratum]</a> 
+		</li>
+		<li> Continuous automorphisms of Cremona groups (with <a href = "https://people.epfl.ch/christian.urech">Christian Urech</a>) <br>
 Int. J. of Math., vol. 32, no.4 (2021) 
-<a href = "continuous_automorphisms.pdf">[pdf]</a>
-</li>
-<li> Quotients of higher dimensional Cremona groups (with <a href = "https://algebra.dmi.unibas.ch/blanc/index.html">J. Blanc</a> and <a href = "https://www.math.univ-toulouse.fr/~slamy/">S. Lamy</a>) <br>
+		<a href = "continuous_automorphisms.pdf">[pdf]</a>
+		</li>
+		<li> Quotients of higher dimensional Cremona groups (with <a href = "https://algebra.dmi.unibas.ch/blanc/index.html">J. Blanc</a> and <a href = "https://www.math.univ-toulouse.fr/~slamy/">S. Lamy</a>) <br>
 Acta Math. Vol. 226, No. 2 (2021), pp. 211-318 <a href = "Blanc-Lamy-Zimmermann.pdf">[pdf]</a></li>
-<li> The real plane Cremona group is a non-trivial amalgam <br>
-Annales de l'Institut Fourier, Volume 71 (2021) no. 3, pp. 1023-1045 <a href="https://aif.centre-mersenne.org/articles/10.5802/aif.3415/">[pdf]</a></li>
-<li> 
-Signature morphisms from the Cremona group over a non-closed field (with <a href = "https://www.math.univ-toulouse.fr/~slamy/">S. Lamy</a>) <br>
+		<li> The real plane Cremona group is a non-trivial amalgam <br>
+		Annales de l'Institut Fourier, Volume 71 (2021) no. 3, pp. 1023-1045 <a href="https://aif.centre-mersenne.org/articles/10.5802/aif.3415/">[pdf]</a></li>
+		<li> 
+		Signature morphisms from the Cremona group over a non-closed field (with <a href = "https://www.math.univ-toulouse.fr/~slamy/">S. Lamy</a>) <br>
 J. Eur. Math. Soc. 22 (2020), 3133-3173 <a href = "Lamy_Zimmermann.pdf">[pdf]</a>
-<li> 
-A new presentation of the plane Cremona group (with <a href = "https://people.epfl.ch/christian.urech">C. Urech</a>) <br>
-Proceedings of the AMS, vol. 147, no. 7 (2019) 2741-2755. 
-<a href = "Presentation_UZ.pdf">[pdf]</a></li>
+		<li> 
+		A new presentation of the plane Cremona group (with <a href = "https://people.epfl.ch/christian.urech">C. Urech</a>) <br>
+		Proceedings of the AMS, vol. 147, no. 7 (2019) 2741-2755. 
+		<a href = "Presentation_UZ.pdf">[pdf]</a></li>
 
-<li>The decomposition groups of plane conics and plane rational cubics (with <a href = "https://sites.google.com/site/tomducatmaths/">T. Ducat</a> and <a href = "https://sites.google.com/site/isacheden/">I. Heden</a>) <br>
-Math. Res. Lett., 26(1) (2019), 35-52 
-<a href = "decompositionGroup.pdf">[pdf]</a></li>
+		<li>The decomposition groups of plane conics and plane rational cubics (with <a href = "https://sites.google.com/site/tomducatmaths/">T. Ducat</a> and <a href = "https://sites.google.com/site/isacheden/">I. Heden</a>) <br>
+		Math. Res. Lett., 26(1) (2019), 35-52 
+		<a href = "decompositionGroup.pdf">[pdf]</a></li>
 
-<li> Infinite algebraic subgroups of the real Cremona group  (with M. F. Robayo) <br>
-Osaka J. of Math., vol.55, no.4 (2018), 681-712
- <a href = "alg_subgrps_of_real_cremona.pdf">[pdf]</a></li> 
+		<li> Infinite algebraic subgroups of the real Cremona group  (with M. F. Robayo) <br>
+		Osaka J. of Math., vol.55, no.4 (2018), 681-712
+ 		<a href = "alg_subgrps_of_real_cremona.pdf">[pdf]</a></li> 
 
-<li>  The abelianisation of the real Cremona group <br>
-Duke Math. J. vol. 167, no.2 (2018), 211-267 <a href = "Abelianisation.pdf">[pdf]</a>  </li>
+		<li>  The abelianisation of the real Cremona group <br>
+		Duke Math. J. vol. 167, no.2 (2018), 211-267 <a href = "Abelianisation.pdf">[pdf]</a>  </li>
 
-<li> Topological simplicity of the Cremona groups  (with <a href = "https://algebra.dmi.unibas.ch/blanc/index.html">J. Blanc</a>)  <br>
-Amer. J. Math. 140 (2018), no. 5, 1297-1309  <a href="Topsimp.pdf"> [pdf] </a> </li>
+		<li> Topological simplicity of the Cremona groups  (with <a href = "https://algebra.dmi.unibas.ch/blanc/index.html">J. Blanc</a>)  <br>
+		Amer. J. Math. 140 (2018), no. 5, 1297-1309  <a href="Topsimp.pdf"> [pdf] </a> </li>
 
-<li> The decomposition group of a line (with <a href = "https://sites.google.com/site/isacheden/">I. Heden</a>) <br>
-Proc. Amer. Math. Soc. 145 (2017), no. 9, 3665-3680   
-<a href = "decl.pdf"> [pdf] </a>  </li>
+		<li> The decomposition group of a line (with <a href = "https://sites.google.com/site/isacheden/">I. Heden</a>) <br>
+		Proc. Amer. Math. Soc. 145 (2017), no. 9, 3665-3680   
+		<a href = "decl.pdf"> [pdf] </a>  </li>
 
-<li> The Cremona group is compactly presented <br> 
-J. London Math. Soc. 93, no. 1 (2016), 25-46<a href = "Cremona_compactly_presented.pdf">[pdf]</a> <a href = "http://jlms.oxfordjournals.org/content/93/1/25.abstract?keytype=ref&ijkey=kVDRmoQkzC5Drjz"> [official page] </a>
- </li>
-</ol>
-
-
-
-
-<h3> Thesis </h3>
-<ul>
-<li> Habilitation: <a href = "HDR_v3.pdf"> Homomorphisms of and from the Cremona group</a>, University of Angers, 2021
-<li> Phd thesis: <a href = "Thesis.pdf"> Compositions and relations in the Cremona groups. </a> University of Basel, 2016
-</li>
-<li>  Master thesis: <a href = "Geometry and Invariants of the Affine Group 2.pdf"> Geometry and Invariants of the Affine Group. </a> University of Basel, 2013
-</li>
-</ul>
+		<li> The Cremona group is compactly presented <br> 
+		J. London Math. Soc. 93, no. 1 (2016), 25-46<a href = "Cremona_compactly_presented.pdf">[pdf]</a> <a href = "http://jlms.oxfordjournals.org/content/93/1/25.abstract?keytype=ref&ijkey=kVDRmoQkzC5Drjz"> [official page] </a>
+		 </li>
+		</ol>
+		</td>
+		</table>
 
 
+
+	<h3> Thesis </h3>
+		<table>
+		<td>
+		<ul>
+		<li> Habilitation: <a href = "HDR_v3.pdf"> Homomorphisms of and from the Cremona group</a>, University of Angers, 2021
+		<li> Phd thesis: <a href = "Thesis.pdf"> Compositions and relations in the Cremona groups. </a> University of Basel, 2016
+		</li>
+		<li>  Master thesis: <a href = "Geometry and Invariants of the Affine Group 2.pdf"> Geometry and Invariants of the Affine Group. </a> University of Basel, 2013
+		</li>
+		</ul>
+		</td>
+		</table>
+
+	</div>
 </div>
 
 
@@ -191,104 +211,113 @@ J. London Math. Soc. 93, no. 1 (2016), 25-46<a href = "Cremona_compactly_present
 
 
 
-<div id="Activities" class="tabcontent">
+<!-- Talks section -->
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="Activities">
+    <h2><b>Activities</b></h2>
+    	<div class="w3-content w3-justify" style="max-width:600px">
 
-
-<ul>
-<li>I'm organising the annual <a href="https://susannazimmermann.github.io/LSK23.github.io/">Lectures Sophie Kowalevski</a> (a master class at level M1) with <a href="https://perso.math.u-pem.fr/fermanian.clotilde/">C. Fermanian Kammerer</a> and <a href = "http://nraymond.perso.math.cnrs.fr">N. Raymond</a>.</li>
-</ul>
-
-
-
-<h3> Upcoming events </h3>
-<ul>
-<li>  13th swiss-french workshop in Algebraic Geometry, 29 January - 2 Februrary 2023, financial support by ERC Saphidir</li>
-<li> K-Stability, Birational Geometry and Mirror Symmetry, Oberwolfach, 17-22 March 2024, with <a href="https://delcroix.perso.math.cnrs.fr"> T. Delcroix</a> and <a href="https://sites.google.com/view/lianaheuberger/home"> L. Heuberger</a></li>
-<li> EpiGA conference, IHP, Pari, 10-14 June 2024, Paris </li>
-<li> Birational Geometry and K-stability, 9-13 September 2024, Cetraro; organising with <a href="https://www.maths.ed.ac.uk/cheltsov/">I. Cheltsov</a> and <a href="http://andrea.fanelli.perso.math.cnrs.fr">A. Fanelli</a>, supported by ERC Saphidir</li>
-</ul>
+		<table><td>
+		<ul>
+		<li>I'm organising the annual <a href="https://susannazimmermann.github.io/LSK23.github.io/">Lectures Sophie Kowalevski</a> (a master class at level M1) with <a href="https://perso.math.u-pem.fr/fermanian.clotilde/">C. Fermanian Kammerer</a> and <a href = "http://nraymond.perso.math.cnrs.fr">N. Raymond</a>.</li>
+		</ul>
+		</td></table>
 
 
 
-<h3> Past events</h3>
-<ul>
-<li><a href="https://www.lebesgue.fr/en/confregulue">Birational Geometry and Regulous Functions</a>, 6-9 June 2023, member of scientific committee, supported by ERC Saphidir.</li>
-<li> <a href="https://susannazimmermann.github.io/LSK23.github.io/">Lectures Sophie Kowalevski</a>, 31 mai - 2 juin 2023, organising with <a href="https://perso.math.u-pem.fr/fermanian.clotilde/">C. Fermanian Kammerer</a> and <a href = "http://nraymond.perso.math.cnrs.fr">N. Raymond</a>.</li>
-<li> <a href = "http://andrea.fanelli.perso.math.cnrs.fr/gruyere12/">12th swiss-french workshop in Algebraic Geometry</a>, 30 January - 3 Februrary 2023, organising with 
-<a href="http://andrea.fanelli.perso.math.cnrs.fr">A. Fanelli</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>,
-<a href="https://www.math.univ-toulouse.fr/~jschneid/">J. Schneider</a> and 
-<a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a></li>
-<li> Workshop <a href="https://scgp.stonybrook.edu/archives/36865">Birational Complexity of Algebraic Varieties</a> on 12-16 December 2022, organising with  
-<a href="https://sites.google.com/view/ibarros/">Ignacio Barros</a>, 
-<a href="https://en.wikipedia.org/wiki/Robert_Lazarsfeld">Robert Lazarsfeld</a>, <a href="http://www.math.stonybrook.edu/~olmartin/">Olivier Martin</a>, 
-<a href ="http://www-personal.umich.edu/~dajost/">David Stapleton</a><br></li>
-<li> 
-<a href="https://scgp.stonybrook.edu/archives/37720">Graduate Workshop on the Birational Complexity of Algebraic Varieties</a> 
+		<h3> Upcoming events </h3>
+		<table><td>
+		<ul>
+		<li>  13th swiss-french workshop in Algebraic Geometry, 29 January - 2 February 2023, financial support by ERC Saphidir</li>
+		<li> K-Stability, Birational Geometry and Mirror Symmetry, Oberwolfach, 17-22 March 2024, with <a href="https://delcroix.perso.math.cnrs.fr"> T. Delcroix</a> and <a href="https://sites.google.com/view/lianaheuberger/home"> L. Heuberger</a></li>
+		<li> EpiGA conference, IHP, Paris, 10-14 June 2024</li>
+		<li> Birational Geometry and K-stability, 9-13 September 2024, Cetraro; organising with <a href="https://www.maths.ed.ac.uk/cheltsov/">I. Cheltsov</a> and <a href="http://andrea.fanelli.perso.math.cnrs.fr">A. Fanelli</a>, supported by ERC Saphidir</li>
+		</ul>
+		</td></table>
+
+
+	<h3> Past events</h3>
+		<table><td>
+		<ul>
+		<li><a href="https://www.lebesgue.fr/en/confregulue">Birational Geometry and Regulous Functions</a>, 6-9 June 2023, member of scientific committee, supported by ERC Saphidir.</li>
+		<li> <a href="https://susannazimmermann.github.io/LSK23.github.io/">Lectures Sophie Kowalevski</a>, 31 mai - 2 juin 2023, organising with <a href="https://perso.math.u-pem.fr/fermanian.clotilde/">C. Fermanian Kammerer</a> and <a href = "http://nraymond.perso.math.cnrs.fr">N. Raymond</a>.</li>
+		<li> <a href = "http://andrea.fanelli.perso.math.cnrs.fr/gruyere12/">12th swiss-french workshop in Algebraic Geometry</a>, 30 January - 3 Februrary 2023, organising with 
+		<a href="http://andrea.fanelli.perso.math.cnrs.fr">A. Fanelli</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>,
+		<a href="https://www.math.univ-toulouse.fr/~jschneid/">J. Schneider</a> and 
+		<a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a></li>
+		<li> Workshop <a href="https://scgp.stonybrook.edu/archives/36865">Birational Complexity of Algebraic Varieties</a> on 12-16 December 2022, organising with  
+		<a href="https://sites.google.com/view/ibarros/">Ignacio Barros</a>, 
+		<a href="https://en.wikipedia.org/wiki/Robert_Lazarsfeld">Robert Lazarsfeld</a>, <a href="http://www.math.stonybrook.edu/~olmartin/">Olivier Martin</a>, 
+		<a href ="http://www-personal.umich.edu/~dajost/">David Stapleton</a><br></li>
+		<li> 
+		<a href="https://scgp.stonybrook.edu/archives/37720">Graduate Workshop on the Birational Complexity of Algebraic Varieties</a> 
 on 5-9 December 2022, organising with  
-<a href="https://sites.google.com/view/ibarros/">Ignacio Barros</a>, 
-<a href="https://en.wikipedia.org/wiki/Robert_Lazarsfeld">Robert Lazarsfeld</a>, <a href="http://www.math.stonybrook.edu/~olmartin/">Olivier Martin</a>, 
-<a href ="http://www-personal.umich.edu/~dajost/">David Stapleton</a></li>
-<li> <a href="https://susannazimmermann.github.io/LSK22.github.io/">Lectures Sophie Kowalevski</a>, 30 mai - 1 juin 2022, organised with <a href = "http://nraymond.perso.math.cnrs.fr">Nicolas Raymond</a></li>
-<li> <a href = "https://susannazimmermann.github.io/Croisic.github.io/">Conference in enumerative, real and birational geometry</a>, 6-10 June 2022, Le Croisic, organised with <a href="http://erwan.brugalle.perso.math.cnrs.fr/index.html">E. Burgallé</a> and <a href="https://www.math.univ-angers.fr/~mangolte/">F. Mangolte</a></li>
-<li> <a href="https://susannazimmermann.github.io/LSK21.github.io/">Lectures Sophie Kowalevski</a>, 30 mai - 1 juin 2022, organised with <a href = "http://nraymond.perso.math.cnrs.fr">Nicolas Raymond</a></li>
-<li> <a href = "https://susannazimmermann.github.io/gruyere11.github.io/">11th swiss-french workshop in Algebraic Geometry</a>, 10 - 14 January 2022, organised with 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>,
-<a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a></li>
-<li><a href = "https://susannazimmermann.github.io/GAGCAngers.github.io/">Journées du GDR GAGC &agrave; Angers</a>, 24 - 26 November 2021, organised with <a href = "http://druel.perso.math.cnrs.fr/index.html">Stéphane Druel</a></li>
+		<a href="https://sites.google.com/view/ibarros/">Ignacio Barros</a>, 
+		<a href="https://en.wikipedia.org/wiki/Robert_Lazarsfeld">Robert Lazarsfeld</a>, <a href="http://www.math.stonybrook.edu/~olmartin/">Olivier Martin</a>, 
+		<a href ="http://www-personal.umich.edu/~dajost/">David Stapleton</a></li>
+		<li> <a href="https://susannazimmermann.github.io/LSK22.github.io/">Lectures Sophie Kowalevski</a>, 30 mai - 1 juin 2022, organised with <a href = "http://nraymond.perso.math.cnrs.fr">Nicolas Raymond</a></li>
+		<li> <a href = "https://susannazimmermann.github.io/Croisic.github.io/">Conference in enumerative, real and birational geometry</a>, 6-10 June 2022, Le Croisic, organised with <a href="http://erwan.brugalle.perso.math.cnrs.fr/index.html">E. Burgallé</a> and <a href="https://www.math.univ-angers.fr/~mangolte/">F. Mangolte</a></li>
+		<li> <a href="https://susannazimmermann.github.io/LSK21.github.io/">Lectures Sophie Kowalevski</a>, 30 mai - 1 juin 2022, organised with <a href = "http://nraymond.perso.math.cnrs.fr">Nicolas Raymond</a></li>
+		<li> <a href = "https://susannazimmermann.github.io/gruyere11.github.io/">11th swiss-french workshop in Algebraic Geometry</a>, 10 - 14 January 2022, organised with 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>,
+		<a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a></li>
+		<li><a href = "https://susannazimmermann.github.io/GAGCAngers.github.io/">Journées du GDR GAGC &agrave; Angers</a>, 24 - 26 November 2021, organised with <a href = "http://druel.perso.math.cnrs.fr/index.html">Stéphane Druel</a></li>
 
-<li> <a href = "https://susannazimmermann.github.io/gruyere10.github.io/">10th swiss-french workshop in Algebraic Geometry</a>, 20 - 24 September 2021, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a></li>
+		<li> <a href = "https://susannazimmermann.github.io/gruyere10.github.io/">10th swiss-french workshop in Algebraic Geometry</a>, 20 - 24 September 2021, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a></li>
 
-<li> <a href = "https://susannazimmermann.github.io/AGA.github.io/">Algebraic Geometry Angers</a>, 14-18 June 2021, organised with <a href = "http://www-math.sp2mi.univ-poitiers.fr/~efloris/">Enrica Floris</a></li>
+		<li> <a href = "https://susannazimmermann.github.io/AGA.github.io/">Algebraic Geometry Angers</a>, 14-18 June 2021, organised with <a href = "http://www-math.sp2mi.univ-poitiers.fr/~efloris/">Enrica Floris</a></li>
 
-<li> <a href="https://susannazimmermann.github.io/LSK21.github.io/">Lectures Sophie Kowalevski</a>, 31 mai - 2 juin 2021, organised with <a href = "http://nraymond.perso.math.cnrs.fr">Nicolas Raymond</a></li>
+		<li> <a href="https://susannazimmermann.github.io/LSK21.github.io/">Lectures Sophie Kowalevski</a>, 31 mai - 2 juin 2021, organised with <a href = "http://nraymond.perso.math.cnrs.fr">Nicolas Raymond</a></li>
 
-<li> <a href = "https://susannazimmermann.github.io/gruyere9.github.io/">9th swiss-french workshop in Algebraic Geometry</a>, 13-17 January 2020, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a></li>
+		<li> <a href = "https://susannazimmermann.github.io/gruyere9.github.io/">9th swiss-french workshop in Algebraic Geometry</a>, 13-17 January 2020, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a></li>
 
-<li> <a href = "http://fibalga.math.cnrs.fr/Angers-2019.html">FIBALGA à Angers</a>, 20-21 May 2019</li>
+		<li> <a href = "http://fibalga.math.cnrs.fr/Angers-2019.html">FIBALGA à Angers</a>, 20-21 May 2019</li>
 
-<li> <a href = "https://susannazimmermann.github.io/gruyere8.github.io/">8th swiss-french workshop in Algebraic Geometry</a>, 7-11 January 2019, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>
-<br></li>
+		<li> <a href = "https://susannazimmermann.github.io/gruyere8.github.io/">8th swiss-french workshop in Algebraic Geometry</a>, 7-11 January 2019, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>
+		<br></li>
 
-<li>
-<a href = "https://www.lebesgue.fr/fr/content/seminars-journee%20reelle"> Journ&eacute; r&eacute;elle de CHL </a>, 3 - 4 December, Angers
-</li>
+		<li>
+		<a href = "https://www.lebesgue.fr/fr/content/seminars-journee%20reelle"> Journ&eacute; r&eacute;elle de CHL </a>, 3 - 4 December, Angers
+		</li>
 
-<li>
-<a href = "Angers-Poitiers/angers-poitiers.html">Rencontre Angers - Poitiers en g&eacute;om&eacute;trie alg&eacute;brique</a>, 
+		<li>
+		<a href = "Angers-Poitiers/angers-poitiers.html">Rencontre Angers - Poitiers en g&eacute;om&eacute;trie alg&eacute;brique</a>, 
 5-6 June 2018, 
 organised with <a href = "http://www-math.sp2mi.univ-poitiers.fr/~efloris/">Enrica Floris</a>
-</li>
+		</li>
 
-<li> <a href = "https://susannazimmermann.github.io/gruyere7.github.io/">7th swiss-french workshop in Algebraic Geometry</a>, 8-12 January 2018, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>
-<br></li>
+		<li> <a href = "https://susannazimmermann.github.io/gruyere7.github.io/">7th swiss-french workshop in Algebraic Geometry</a>, 8-12 January 2018, organised with <a href = "http://ronan.terpereau.perso.math.cnrs.fr">R. Terpereau</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>
+		<br></li>
 
-<li> <a href = "https://susannazimmermann.github.io/gruyere6.github.io/">6th swiss-french workshop in Algebraic Geometry</a>, 9-13 January 2017, organised with 
-<a href = "http://jones.math.unibas.ch/~blanc/">J. Blanc</a>, 
-<a href = "http://dubouloz.perso.math.cnrs.fr/activities.html">A. Dubouloz</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>
-<br></li> 
-<li><a href = "https://algebra.dmi.unibas.ch/blanc/cremonaconference/index.html">Cremona conference Basel 2016</a>, 5-16 September 2016, organised with 
-<a href = "http://jones.math.unibas.ch/~blanc/">J. Blanc</a>, 
-<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/hemmig/">M. Hemmig</a>,
- <a href = "https://math.unibas.ch/institut/personen/profil/profil/person/urech/">C. Urech</a> </li>
-</ul>
+		<li> <a href = "https://susannazimmermann.github.io/gruyere6.github.io/">6th swiss-french workshop in Algebraic Geometry</a>, 9-13 January 2017, organised with 
+		<a href = "http://jones.math.unibas.ch/~blanc/">J. Blanc</a>, 
+		<a href = "http://dubouloz.perso.math.cnrs.fr/activities.html">A. Dubouloz</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/habegger/">P. Habegger</a>
+		<br></li> 
+		<li><a href = "https://algebra.dmi.unibas.ch/blanc/cremonaconference/index.html">Cremona conference Basel 2016</a>, 5-16 September 2016, organised with 
+		<a href = "http://jones.math.unibas.ch/~blanc/">J. Blanc</a>, 
+		<a href = "https://math.unibas.ch/institut/personen/profil/profil/person/hemmig/">M. Hemmig</a>,
+		 <a href = "https://math.unibas.ch/institut/personen/profil/profil/person/urech/">C. Urech</a> </li>
+		</ul>
+		</td></table>
 
 
-
-<h3> Media in which I appear</h3>
-<ul>
-<li><a href="https://agrafr.fr">AGRAFr</a> produced these <a href="https://www.youtube.com/user/AGRAFr">interviews</a> with four women in research in France and Portugal (among them me) for the International Women's Day on 8 March 2022 </li>
-<li><a href = "https://www.youtube.com/watch?v=ADcySS_ZN1M">Interview Ambassadrice Pays de la Loire F&ecirc;te de la Science 2021</a> </li>
-<li><a href = "https://www.youtube.com/watch?v=XBQn_8ArUnM">Sciences en Direct</a> le 06/10/2021, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
-<li><a href = "https://www.youtube.com/watch?v=12zPYgEe-hM">Les id&eacute;es re&ccedil;ues sur la recherche scientifique</a> by <a href = "https://www.youtube.com/channel/UCcSnmRhEM3kLM3fAa-aW2-g">Nora Minion</a>, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
-<li>On France 3 in <a href ="https://www.france.tv/france-3/pays-de-la-loire/vous-etes-formidables-pays-de-la-loire/">Vous &ecirc;tes formidables</a> on 30/09/2021, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
-<li>In the Podcast <a href="https://emosons.lepodcast.fr">Emosons</a> of <a href="https://labodessavoirs.fr">Labo de savoirs</a> by Dounia Saez on 01/10/2021, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
-</ul>
+	<h3> Media in which I appear</h3>
+		<table><td>
+		<ul>
+		<li><a href="https://agrafr.fr">AGRAFr</a> produced these <a href="https://www.youtube.com/user/AGRAFr">interviews</a> with four women in research in France and Portugal (among them me) for the International Women's Day on 8 March 2022 </li>
+		<li><a href = "https://www.youtube.com/watch?v=ADcySS_ZN1M">Interview Ambassadrice Pays de la Loire F&ecirc;te de la Science 2021</a> </li>
+		<li><a href = "https://www.youtube.com/watch?v=XBQn_8ArUnM">Sciences en Direct</a> le 06/10/2021, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
+		<li><a href = "https://www.youtube.com/watch?v=12zPYgEe-hM">Les id&eacute;es re&ccedil;ues sur la recherche scientifique</a> by <a href = "https://www.youtube.com/channel/UCcSnmRhEM3kLM3fAa-aW2-g">Nora Minion</a>, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
+		<li>On France 3 in <a href ="https://www.france.tv/france-3/pays-de-la-loire/vous-etes-formidables-pays-de-la-loire/">Vous &ecirc;tes formidables</a> on 30/09/2021, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
+		<li>In the Podcast <a href="https://emosons.lepodcast.fr">Emosons</a> of <a href="https://labodessavoirs.fr">Labo de savoirs</a> by Dounia Saez on 01/10/2021, as ambassador of the <a href = "https://fetedelascience-paysdelaloire.fr">F&ecirc;te de la Science</a> in 2021 des Pays de la Loire</li>
+		</ul>
+		</td></table>
+	</div>
 
 </div>
 
@@ -299,39 +328,50 @@ organised with <a href = "http://www-math.sp2mi.univ-poitiers.fr/~efloris/">Enri
 
 
 
-<div id="Talks" class="tabcontent">
-<h3> Upcoming talks </h3>
-<ul> 
-<li> 19-21.6.2023: AGGITatE workshop</li>
-<li> 23.6.2023: Seminaire G&eacute;m&eacute;trie, Bordeaux</li>
-<li> 21.-25.8.2023: 4th Korea-France Conference in Mathematics, KIAS, Korea</li>
-</ul>
+<!-- Talks section -->
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="Talks">
+    <h2><b>Talks</b></h2>
+    	<div class="w3-content w3-justify" style="max-width:600px">
+	
+	
+	<h3> Upcoming talks </h3>
+		<table><td>
+		<ul> 
+		<li> 5.-8.5.2023: Algebraic Transformation Groups, Monte Verita, Switzerland</li>
+		<li> 30.10.-2.1.2023: Brill-Noether workshop, CIRM, Luminy</li>
+		<li> 13.10.2023: S&eacute;minaire dynamiques et alg&eacute;brique, Jussieu, Paris</li>
+		<li> 20.9.2023: Séminaire “des Mathématiques” (Ens Ulm)</li>
+		</ul>
+		</td></table>
 
-<h3> Recent talks </h3>
-<ul>
-<li> 5.-9.6.2023: Birational Geometry and biregulous functions, Le Croisic, France</li>
-<li> 15-17.5.2023: Spring meeting in Milano</li>
-<li> 15.2.2023: S&eacute;minaire Raconte-moi, ENS Paris</li>
-<li> 25.1.2023: Algebraic Geometry Seminar, Univ. Saarbr&uuml;cken</li>
-<li> 20.1.2023: Joint Seminar in Complex Algebraic Geometry and Complex Analysis (Bochum-Essen-Köln-Münster-Wuppertal)
-<li> 19.1.2023: Algebraic Geometry Seminar, Univ. Essen</li>
-<li>8.-9.12.2022 Journ&eacute;es r&eacute;elles, Univ. d’Angers</li>
-<li> 28.11-2.12.2022: Rencontre GAGC, CIRM</li>
-</ul>
+	<h3> Recent talks </h3>
+		<table><td>
+		<ul>
+		<li> 21.-25.8.2023: 4th Korea-France Conference in Mathematics, KIAS, Korea</li>
+		<li> 19-21.6.2023: AGGITatE workshop</li>
+		<li> 23.6.2023: Seminaire G&eacute;m&eacute;trie, Bordeaux</li>
+		<li> 5.-9.6.2023: Birational Geometry and biregulous functions, Le Croisic, France</li>
+		<li> 15-17.5.2023: Spring meeting in Milano</li>
+		</ul>
+		</td></table>
 
-<h3> Some recorded talks</h3>
-<ul>
-<li> <a href="https://www-fourier.univ-grenoble-alpes.fr/seminaire-gg/?q=archives">Involutions du plan projectif</a> 
+	<h3> Some recorded talks</h3>
+		<table><td>
+		<ul>
+		<li> <a href="https://www-fourier.univ-grenoble-alpes.fr/seminaire-gg/?q=archives">Involutions du plan projectif</a> 
 S&eacute;minaire francophone en-ligne de groupes et g&eacute;om&eacute;trie, October 2022</li>
-<li><a href ="https://www.youtube.com/watch?v=8rOd_2Mvr48&list=PLkrkT9NEvlTalsJBbzNvkFPAqz7gZB1Mz&index=3">Algebraic groups acting birationally on surfaces over a perfect field</a>, online seminar Quadratic forms, Linear algebraic groups and Beyond, May 2021</li>
-<li> <a href = "Spheres_maledictes_Zimmermann_short.mp4">Sph&egrave;res maledictes</a>; popularisation video on the Paradoxon of Banach-Tarski for the Nuit Europ&eacute;enne des Chercheur.e.s 2020 in Angers.</li>
-<li> <a href = "https://vimeo.com/434742631"> Finite quotients of Cremona groups </a>; in the Zoom Algebraic Geometry Seminar, July 2020
+		<li><a href ="https://www.youtube.com/watch?v=8rOd_2Mvr48&list=PLkrkT9NEvlTalsJBbzNvkFPAqz7gZB1Mz&index=3">Algebraic groups acting birationally on surfaces over a perfect field</a>, online seminar Quadratic forms, Linear algebraic groups and Beyond, May 2021</li>
+		<li> <a href = "Spheres_maledictes_Zimmermann_short.mp4">Sph&egrave;res maledictes</a>; popularisation video on the Paradoxon of Banach-Tarski for the Nuit Europ&eacute;enne des Chercheur.e.s 2020 in Angers.</li>
+		<li> <a href = "https://vimeo.com/434742631"> Finite quotients of Cremona groups </a>; in the Zoom Algebraic Geometry Seminar, July 2020
+		</li>
+		<li> <a href = "http://bogomolov-lab.ru/video/may14.mp4">Cremona groups and some quotients</a>; in the seminar <a href="https://users.mccme.ru/nikon/zoomerfest/more.html">ZOOMerFEST </a> (16th edition), May 2020
 </li>
-<li> <a href = "http://bogomolov-lab.ru/video/may14.mp4">Cremona groups and some quotients</a>; in the seminar <a href="https://users.mccme.ru/nikon/zoomerfest/more.html">ZOOMerFEST </a> (16th edition), May 2020
-</li>
-<li> <a href = "https://www.youtube.com/watch?v=4CvOZ_G6qXY"> Signature morphisms of the Cremona group </a>; at CIRM, april 2018
-</li>
-</ul>
+		<li> <a href = "https://www.youtube.com/watch?v=4CvOZ_G6qXY"> Signature morphisms of the Cremona group </a>; at CIRM, april 2018
+		</li>
+		</ul>
+		</td></table>
+	
+	</div>
 </div>
 
 
@@ -348,19 +388,65 @@ S&eacute;minaire francophone en-ligne de groupes et g&eacute;om&eacute;trie, Oct
 
 
 
+<!-- ERC section -->
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="ERC">
+    <h2><b>ERC Saphidir</b></h2>
+    	<div class="w3-content w3-justify" style="max-width:600px">
+	
+		<h3> The project</h3>
+		<p> 
+		Birational maps are key to classifying algebraic varieties, determining whether they are isomorphic. Sarkisov links are special birational maps describing Mori fibre spaces, but little is known about them over a field in high-dimensional spaces (from three and above). The ERC-funded Saphidir project will seek to describe all Sarkisov links in any dimension and in non-classical settings. Focus will be placed on classifying Sarkisov links over the field of complex numbers and over a field of positive characteristic. Enriching knowledge about Sarkisov links will revolutionise the study of birational maps and provide exciting new tools to determine classes of algebraic varieties in several settings.
+		</p>
+
+		
+		<h3> The research group</h3>
+		<table><td>
+		<ul>
+		<li> <a href = "https://sites.google.com/view/pascalfong/fr">Pascal Fong</a>, postdoc</li>
+		<li> <a href = "https://sites.google.com/view/eduardo-alvesdasilva-math/home">Eduardo Alves da Silva</a>, postdoc</li>
+		<li> Aurore Boitrel, PhD student</li>
+		</ul>
+		</td></table>
+		
+				
+		<h3> Supported events</h3>
+		<table><td>
+		<ul>
+		<li>  13th swiss-french workshop in Algebraic Geometry, 29 January - 2 February 2023</li>
+		<li> EpiGA conference, IHP, Paris, 10-14 June 2024, <br> member of organising team</li>
+		<li> Birational Geometry and K-stability, 9-13 September 2024, Cetraro,<br> organising with <a href="https://www.maths.ed.ac.uk/cheltsov/">I. Cheltsov</a> and <a href="http://andrea.fanelli.perso.math.cnrs.fr">A. Fanelli</a></li>
+		<li><a href="https://www.lebesgue.fr/en/confregulue">Birational Geometry and Regulous Functions</a>, 6-9 June 2023, <br> member of scientific committee</li>
+		</ul>
+		</td></table>
+		
+			
+		<table><td>
+		<img src="LOGO_ERC-FLAG_EU NEGATIF.png" style="width:150px;height:100px;">
+		</td>
+		</table>
+	
+	</div>
+</div>
 
 
 
-<div id="Decompose" class="tabcontent" style="overflow:auto;">
-
-<h3> Visualize relations among Sarkisov links </h3>
-<p>Visualize relations among Sarkisov links over a perfect field
-<a href = "https://www.math.univ-toulouse.fr/~slamy/sarkirel.html">[here]</a> and <a href = "https://www.math.univ-toulouse.fr/~slamy/sarkirel/sarkirel_interactive.html">[here]</a> on the hompage of <a href = "https://www.math.univ-toulouse.fr/~slamy/">St&eacute;phane Lamy</a>.</p>
 
 
-<h3> Decompose birational maps of the plane </h3>
+<!-- Hands on math section -->
+<div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="Hands on math">
+    <h2><b>Hands on math</b></h2>
+    	<div class="w3-content w3-justify" style="max-width:600px">
+<!--<div id="Decompose" class="tabcontent" style="overflow:auto;">-->
 
-<script src="decomp_transfo.js" defer></script>
+	<h3> Visualize relations among Sarkisov links </h3>
+		<table><td>
+		<p>Visualize relations among Sarkisov links over a perfect field
+		<a href = "https://www.math.univ-toulouse.fr/~slamy/sarkirel.html">[here]</a> and <a href = "https://www.math.univ-toulouse.fr/~slamy/sarkirel/sarkirel_interactive.html">[here]</a> on the hompage of <a href = "https://www.math.univ-toulouse.fr/~slamy/">St&eacute;phane Lamy</a>.</p>
+		</td></table>
+
+	<h3> Decompose birational maps of the plane </h3>
+	<table><td>
+	<script src="decomp_transfo.js" defer></script>
 		
 
 	<p style="padding-bottom:2px;">This is program created by Thibault Chailleux in his <a href="publications/memoir_Chailleux.pdf">[master thesis]</a>. It decomposes any birational map of the complex projective plane into quadratic maps. <br>
@@ -468,6 +554,10 @@ S&eacute;minaire francophone en-ligne de groupes et g&eacute;om&eacute;trie, Oct
 
 	</td></tr>
 	</table>
+	
+	</td></table>
+	
+	</div>
 
 </div>
 
